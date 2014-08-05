@@ -4,17 +4,24 @@ function Runner (name,speed,surfacepref,shoepref){
   this.surfacepref=surfacepref;
   this.shoepref=shoepref;
   this.run= function (surface,shoe){
-    console.log("surface: " + surface.type + " shoe: " + shoe.company);
-   if(surface.type === this.surfacepref && shoe.company === this.shoepref){
-    this.speed = this.speed + surface.speed + shoe.speed;
 
+   if(surface.type === this.surfacepref){
+    this.speed = this.speed + surface.speed;
    }else{
-    this.speed = this.speed - surface.speed - shoe.speed;
-
-   }
-
-
-
+    this.speed = this.speed - surface.speed;
+}
+  if(shoe.company === this.shoepref){
+   this.speed = this.speed + shoe.speed;
+  }else{
+   this.speed = this.speed - shoe.speed;
+  }
+  if(this.speed > 10){
+   alert("You're time is going to be Usain Bolt fast!")
+ }else if(this.speed < 10 > 6){
+   alert("You're time is going to be average.")
+ }else{
+  alert("You're time is going to be slow.")
+ }
   }
 }
 
