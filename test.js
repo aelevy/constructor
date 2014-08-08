@@ -16,11 +16,11 @@ function Runner (name,speed,surfacepref,shoepref){
    this.speed = this.speed - shoe.speed;
   }
   if(this.speed > 10){
-   alert("You're time is going to be Usain Bolt fast!")
+   alert("Your time is going to be Usain Bolt fast!")
  }else if(this.speed < 10 > 6){
-   alert("You're time is going to be average.")
+   alert("Your time is going to be average.")
  }else{
-  alert("You're time is going to be slow.")
+  alert("Your time is going to be slow.")
  }
   }
 }
@@ -49,7 +49,5 @@ var Nike = new Shoe("Nike",4 );
 var Brooks = new Shoe("Brooks",4);
 var Hoka = new Shoe ("Hoka",4);
 var Asics = new Shoe ("Asics",4);
-
-
 
 //if surface and shoe match runners preference adds speed value, if it does not match subtracts speed value.

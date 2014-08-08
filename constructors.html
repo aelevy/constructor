@@ -3,8 +3,53 @@
 <head>
  <meta charset="UTF-8">
  <title>Document</title>
+ <link rel="stylesheet" href="constructors.css">
 </head>
 <body>
+ <form action="POST">
+  <h2>New Runner</h2>
+  <div>
+  Runner Name: <input type="text" placeholder="Enter Name">
+   Pick Your Surface Preference:<input list="surfacetype">
+     <datalist id="surfacetype">
+      <option value="Track">
+      <option value="Trail">
+      <option value="Street">
+     </datalist>
+     Pick Your Shoe Preference:<input list="shoetype">
+     <datalist id="shoetype">
+       <option value="Nike">
+       <option value="Asics">
+       <option value="Hoka">
+       <option value="Brooks">
+     </datalist>
+     <button type="submit">Submit</button>
+  </div>
+  <h2>Go Running!</h2>
+<div>
+ Pick A Runner: <input list="runnerlist">
+   <datalist id="runnerlist">
+    <option value="Steve">
+    <option value="Bill">
+    <option value="Bob">
+    <option value="Doug">
+   </datalist>
+ Pick Your Surface:<input list="surfacetype">
+   <datalist id="surfacetype">
+    <option value="Track">
+    <option value="Trail">
+    <option value="Street">
+   </datalist>
+   Pick Your Shoe:<input  list="shoetype">
+   <datalist id="shoetype">
+     <option value="Nike">
+     <option value="Asics">
+     <option value="Hoka">
+     <option value="Brooks">
+   </datalist>
+   <button type="submit">Submit</button>
+</div>
+ </form>
  <script src="node_modules/jquery/dist/jquery.js"></script>
  <script src="test.js"></script>
 </body>
