@@ -6,26 +6,9 @@
  <link rel="stylesheet" href="constructors.css">
 </head>
 <body>
- <form action="POST">
-  <h2>New Runner</h2>
-  <div>
-  Runner Name: <input type="text" placeholder="Enter Name">
-   Pick Your Surface Preference:<input list="surfacetype">
-     <datalist id="surfacetype">
-      <option value="Track">
-      <option value="Trail">
-      <option value="Street">
-     </datalist>
-     Pick Your Shoe Preference:<input list="shoetype">
-     <datalist id="shoetype">
-       <option value="Nike">
-       <option value="Asics">
-       <option value="Hoka">
-       <option value="Brooks">
-     </datalist>
-     <button type="submit">Submit</button>
-  </div>
+ 
   <h2>Go Running!</h2>
+<form action="" id="goRunningForm">
 <div>
  Pick A Runner: <input list="runnerlist">
    <datalist id="runnerlist">
@@ -50,6 +33,9 @@
    <button type="submit">Submit</button>
 </div>
  </form>
+ <div class="message">
+
+ </div>
  <script src="node_modules/jquery/dist/jquery.js"></script>
  <script src="test.js"></script>
 </body>
